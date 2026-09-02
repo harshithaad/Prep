@@ -4,14 +4,14 @@ class Solution {
     void segregate0and1(int[] arr) {
         // code here
         int left = 0;
-        int right = arr.length-1;
+        int right = arr.length -1;
         
         while(left < right){
             
-            while(left < right && arr[left] == 0) left++;
-            while (left < right && arr[right] == 1) right--;
+            if(arr[left] == 0) left++;
+            else if(arr[right] == 1) right--;
             
-            if(left < right){ 
+            else{
                 int temp = arr[left];
                 arr[left] = arr[right];
                 arr[right] = temp;

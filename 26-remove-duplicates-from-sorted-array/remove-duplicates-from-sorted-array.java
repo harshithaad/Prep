@@ -10,7 +10,8 @@ class Solution {
             else{
                 ++officer;
                 nums[officer] = nums[cm];
-                unique++;             
+                unique++;  
+                cm++;           
 
             }
         }

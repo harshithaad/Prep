@@ -2,9 +2,9 @@
 SELECT B.name AS Department, A.name AS Employee, A.salary AS Salary
 FROM Employee A
 JOIN Department B
-ON A.departmentId = B.id
+ON  A.departmentId = B.Id
 WHERE A.salary = (
-    SELECT MAX(E.salary)
+    SELECT MAX(salary)
     FROM Employee E
     WHERE E.departmentId = B.id
 );

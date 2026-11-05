@@ -1,3 +1,5 @@
+//Nikhil Lohia
+
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
 
@@ -28,7 +30,7 @@ class Solution {
             freq[c - 'a']++;
         }
 
-        StringBuilder frequencyString  = new StringBuilder("");
+        StringBuilder frequencyString  = new StringBuilder();
         char c = 'a';
         for(int i: freq){
             frequencyString.append(c);
